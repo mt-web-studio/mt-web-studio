@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MT Web Studio.｜Web制作ポートフォリオ</title>
+<meta name="description" content="HTML / CSS / JavaScriptによるWebサイト制作・修正に対応。制作実績・対応可能な業務・お問い合わせをまとめたポートフォリオサイトです。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <!-- 屋号は仮のものです。差し替える場合はこのテキストのみ変更してください -->
+    <a href="#hero" class="logo">MT Web Studio<span class="logo__mark">.</span></a>
+    <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="メニューを開閉する">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+    <nav class="site-nav" id="siteNav" aria-label="サイト内ナビゲーション">
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="#works">Works</a></li>
+        <li><a class="site-nav__link" href="#skills">Skills</a></li>
+        <li><a class="site-nav__link" href="#services">Services</a></li>
+        <li><a class="site-nav__link" href="#about">About</a></li>
+        <li><a class="site-nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <span class="section-label">Web Designer / Coder</span>
+        <h1>Web制作で、<br>伝わるサイトを。</h1>
+        <p class="hero__lead">
+          HTML / CSS / JavaScriptを用いたWebサイトの制作・修正に対応しています。
+          業種やご要望に合わせたデザインと、レスポンシブ対応・アクセシビリティを意識したコーディングを大切にしています。
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn-primary" href="#works">制作実績を見る</a>
+          <a class="btn btn-outline" href="#contact">お問い合わせ</a>
+        </div>
+      </div>
+      <div class="hero__visual" aria-hidden="true">
+        <svg viewBox="0 0 400 300" focusable="false">
+          <rect x="10" y="10" width="380" height="280" rx="10" fill="#ffffff" stroke="#e3e5e8" stroke-width="2"/>
+          <path d="M20,46 L20,20 A10,10 0 0 1 30,10 L370,10 A10,10 0 0 1 380,20 L380,46 Z" fill="#f5f5f5" stroke="#e3e5e8" stroke-width="2"/>
+          <circle cx="34" cy="28" r="4" fill="#c7cad0"/>
+          <circle cx="50" cy="28" r="4" fill="#c7cad0"/>
+          <circle cx="66" cy="28" r="4" fill="#c7cad0"/>
+          <rect x="120" y="20" width="180" height="16" rx="8" fill="#ffffff" stroke="#e3e5e8"/>
+          <rect x="34" y="72" width="140" height="14" rx="3" fill="#23262b" opacity="0.85"/>
+          <rect x="34" y="98" width="220" height="8" rx="3" fill="#d7d9dd"/>
+          <rect x="34" y="114" width="200" height="8" rx="3" fill="#d7d9dd"/>
+          <rect x="34" y="130" width="160" height="8" rx="3" fill="#d7d9dd"/>
+          <rect x="34" y="154" width="92" height="28" rx="6" fill="#3452c9"/>
+          <rect x="34" y="204" width="100" height="60" rx="6" fill="none" stroke="#e3e5e8" stroke-width="2"/>
+          <rect x="150" y="204" width="100" height="60" rx="6" fill="none" stroke="#e3e5e8" stroke-width="2"/>
+          <rect x="266" y="204" width="100" height="60" rx="6" fill="none" stroke="#e3e5e8" stroke-width="2"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="works" aria-labelledby="works-heading">
+    <div class="container">
+      <div class="section__header">
+        <span class="section-label">Works</span>
+        <h2 id="works-heading">制作実績</h2>
+        <p>架空の店舗を題材に、業種ごとのデザインの違いを意識して制作したWebサイトです。</p>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="work-card__mock" aria-hidden="true">
+            <div class="work-card__mock-bar">
+              <div class="work-card__mock-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="work-card__mock-swatches">
+                <span class="work-card__swatch" style="background:#3f5d44"></span>
+                <span class="work-card__swatch" style="background:#faf7f2"></span>
+                <span class="work-card__swatch" style="background:#c98a46"></span>
+              </div>
+            </div>
+          </div>
+          <div class="work-card__body">
+            <div class="work-card__title-row">
+              <h3>Green Table</h3>
+              <span class="work-card__category">架空の飲食店サイト</span>
+            </div>
+            <p class="work-card__desc">
+              旬の野菜と炭火料理をコンセプトにした、架空の小さなダイニングのWebサイトです。
+              深緑とアイボリーを基調に、落ち着きのある雰囲気を意識しました。
+            </p>
+            <ul class="work-card__features">
+              <li>HTML / CSS / JavaScriptで制作</li>
+              <li>レスポンシブ対応（375px〜）</li>
+              <li>4ページ構成（トップ・メニュー・店舗情報・お問い合わせ）</li>
+              <li>外部画像に依存しないオリジナルデザイン</li>
+            </ul>
+            <ul class="work-card__tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Responsive</li>
+            </ul>
+            <div class="work-card__actions">
+              <a class="btn btn-primary btn-sm" href="#" aria-disabled="true">サイトを見る</a>
+              <a class="btn btn-outline btn-sm" href="#" aria-disabled="true">詳細を見る</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card__mock" aria-hidden="true">
+            <div class="work-card__mock-bar">
+              <div class="work-card__mock-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="work-card__mock-swatches">
+                <span class="work-card__swatch" style="background:#322f2b"></span>
+                <span class="work-card__swatch" style="background:#e7dfd2"></span>
+                <span class="work-card__swatch" style="background:#a3885f"></span>
+              </div>
+            </div>
+          </div>
+          <div class="work-card__body">
+            <div class="work-card__title-row">
+              <h3>LUMINA HAIR</h3>
+              <span class="work-card__category">架空の美容室サイト</span>
+            </div>
+            <p class="work-card__desc">
+              上品さと清潔感を重視した、架空のプライベートヘアサロンのWebサイトです。
+              Green Tableとは異なる配色・レイアウトで、業種に合わせた表現の違いを意識しました。
+            </p>
+            <ul class="work-card__features">
+              <li>HTML / CSS / JavaScriptで制作</li>
+              <li>レスポンシブ対応（375px〜）</li>
+              <li>4ページ構成（トップ・メニュー・スタイリスト・お問い合わせ）</li>
+              <li>業種に合わせた異なるデザイン表現</li>
+            </ul>
+            <ul class="work-card__tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Responsive</li>
+            </ul>
+            <div class="work-card__actions">
+              <a class="btn btn-primary btn-sm" href="#" aria-disabled="true">サイトを見る</a>
+              <a class="btn btn-outline btn-sm" href="#" aria-disabled="true">詳細を見る</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section__header">
+        <span class="section-label">Skills</span>
+        <h2 id="skills-heading">スキル</h2>
+        <p>現在使用できる技術と、開発における取り組み方です。</p>
+      </div>
+      <ul class="info-list">
+        <li class="info-list__item">
+          <span class="info-list__title">HTML</span>
+          <p class="info-list__desc">意味を意識したマークアップで、構造的で読みやすいコードを心がけています。</p>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__title">CSS</span>
+          <p class="info-list__desc">CSS変数や余白のルール化など、保守しやすいスタイル設計を意識しています。</p>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__title">JavaScript</span>
+          <p class="info-list__desc">フォームバリデーションやメニュー開閉など、必要な範囲での実装ができます。</p>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__title">Responsive Design</span>
+          <p class="info-list__desc">モバイルファーストで設計し、複数の画面幅での表示確認を行っています。</p>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__title">Web Accessibility</span>
+          <p class="info-list__desc">見出し階層やフォーカス表示、ラベルの関連付けなど基本的な配慮を行っています。</p>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__title">Git / GitHub</span>
+          <p class="info-list__desc">バージョン管理を行いながら、変更履歴を追いやすい形で開発を進めています。</p>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__title">AI-assisted Development</span>
+          <p class="info-list__desc">AIツールをコードの確認や実装の補助として活用し、効率的な開発を行っています。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section__header">
+        <span class="section-label">Services</span>
+        <h2 id="services-heading">対応可能な業務</h2>
+        <p>個人・小規模事業者様のWebサイトを中心に、以下のようなご依頼に対応しています。</p>
+      </div>
+      <ul class="info-list">
+        <li class="info-list__item">
+          <span class="info-list__title">Webサイト制作</span>
+          <p class="info-list__desc">小規模なコーポレートサイトや店舗サイトなど、数ページ構成のサイト制作に対応します。</p>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__title">HTML / CSSコーディング</span>
+          <p class="info-list__desc">デザインカンプやワイヤーフレームをもとにしたコーディングに対応します。</p>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__title">レスポンシブ対応</span>
+          <p class="info-list__desc">スマートフォン・タブレット・PCでの表示崩れがないよう調整します。</p>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__title">Webサイトの軽微な修正</span>
+          <p class="info-list__desc">テキストや画像の差し替え、レイアウトの微調整などに対応します。</p>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__title">JavaScriptによる簡単な機能追加</span>
+          <p class="info-list__desc">フォーム入力チェックやメニュー開閉など、必要な範囲での機能追加に対応します。</p>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__title">LPコーディング</span>
+          <p class="info-list__desc">1ページ完結型のランディングページのコーディングに対応します。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="about" aria-labelledby="about-heading">
+    <div class="container two-col">
+      <div>
+        <span class="section-label">About</span>
+        <h2 id="about-heading">自己紹介</h2>
+      </div>
+      <div class="about-text">
+        <p>
+          HTML / CSS / JavaScriptを中心に、Webサイトの制作・実装を学びながら実績を積んでいます。
+          このポートフォリオに掲載しているGreen Table・LUMINA HAIRも、架空の店舗を題材に一から設計・実装したものです。
+        </p>
+        <p>
+          制作にあたっては、要件の認識合わせや表示確認・動作テストを丁寧に行うことを大切にしています。
+          複数の画面幅での表示や、フォームの入力チェック・アクセシビリティなど、
+          公開後に困らない品質を意識して一つひとつ確認しながら進めています。
+        </p>
+        <p>
+          ご相談内容やご予算に応じて、対応できる範囲を正直にお伝えした上で進めさせていただきます。
+          お気軽にお問い合わせください。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section__header">
+        <span class="section-label">Contact</span>
+        <h2 id="contact-heading">お問い合わせ</h2>
+        <p>ご相談・お見積りのご依頼など、お気軽にご連絡ください。</p>
+      </div>
+
+      <div class="contact-layout">
+        <p class="contact-note">
+          本サイトはポートフォリオ用に制作されたものです。このフォームからの送信は実際には行われません。
+        </p>
+
+        <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-field">
+            <label for="name">お名前<span class="required" aria-hidden="true">必須</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-required="true" aria-describedby="nameError">
+            <span id="nameError" class="form-error" role="alert"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="email">メールアドレス<span class="required" aria-hidden="true">必須</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" aria-describedby="emailError">
+            <span id="emailError" class="form-error" role="alert"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="message">ご相談内容<span class="required" aria-hidden="true">必須</span></label>
+            <textarea id="message" name="message" required aria-required="true" aria-describedby="messageError"></textarea>
+            <span id="messageError" class="form-error" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">送信する</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <p class="site-footer__logo">MT Web Studio.</p>
+    <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+      <a href="#works">Works</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <div class="container">
+    <p class="site-footer__copyright">&copy; 2026 MT Web Studio. Green Table・LUMINA HAIRは架空店舗によるポートフォリオ作品です。</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
